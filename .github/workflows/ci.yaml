@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: install dependencies
-        run: python3 --version
+        run: pip --version
 
       # - name: Running isort.
       #   run: isort --check-only  .
