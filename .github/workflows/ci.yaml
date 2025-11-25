@@ -2,9 +2,10 @@ name: dbt Config
 
 on:
   push:
-    branches: [master]
-  pull_request:
-    branches: [master] 
+    branches:
+      - "**"
+    paths:
+      - "**.py"
 
 jobs:
   lint:
@@ -16,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: install dependencies
-        run: python3 --version
+        run: pip --version
 
       # - name: Running isort.
       #   run: isort --check-only  .
