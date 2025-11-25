@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: install dependencies
-        run: node --version
+        run: ls logs
 
       # - name: Running isort.
       #   run: isort --check-only  .
