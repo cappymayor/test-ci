@@ -1,0 +1,25 @@
+name: dbt Config
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master] 
+
+jobs:
+  lint:
+    name: checkout
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: install dependencies
+        run: python3 --version
+
+      # - name: Running isort.
+      #   run: isort --check-only  .
+
+      # - name: Running flake8
+      #   run: flake8 .
