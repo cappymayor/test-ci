@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: install dependencies
-        run: python3 --version
+        run: node --version
 
       # - name: Running isort.
       #   run: isort --check-only  .
